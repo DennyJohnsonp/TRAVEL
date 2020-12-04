@@ -1,22 +1,9 @@
-const loginNavbtn = document.getElementById("firstlink")
-const closeLoginDialog = document.getElementById("closebtn")
-const loginShowHide = document.getElementById("login-box");
 const loginForm = document.getElementById("login-form");
 const signupForm = document.getElementById("signup-form");
 const loginButton = document.getElementById("login-form-submit");
 const signupButton = document.getElementById("signup-form-submit");
 const errorMsg = document.getElementById("error-msg");
 const successMsg = document.getElementById("success-msg");
-
-loginNavbtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  (loginShowHide.style.display === 'block') ? loginShowHide.style.display = 'none': loginShowHide.style.display = 'block';
-})
-
-closeLoginDialog.addEventListener("click", (e) => {
-  e.preventDefault();
-  loginShowHide.style.display = 'none';
-})
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
