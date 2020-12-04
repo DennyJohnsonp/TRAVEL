@@ -22,7 +22,7 @@ loginButton.addEventListener("click", (e) => {
       errorMsg.style.display = 'none';
       successMsg.innerText = "Login Successful"
       successMsg.style.display = 'block';
-      setTimeout(() => location.reload(), 2000);
+      setTimeout(() =>  window.location='/', 2000);
       
     } else {
       errorMsg.innerText = "Invalid username or password"
@@ -41,7 +41,7 @@ signupButton.addEventListener("click", (e) => {
     errorMsg.style.display = 'none';
     successMsg.innerText = "Sign Up Successful"
     successMsg.style.display = 'block';
-    setTimeout(() => location.reload(), 2000);
+    setTimeout(() =>  window.location='/', 2000);
   } else {
     errorMsg.innerText = "Invalid username or email or password entered";
     errorMsg.style.display = 'block';
