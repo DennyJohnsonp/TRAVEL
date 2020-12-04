@@ -1,9 +1,16 @@
 const loginForm = document.getElementById("login-form");
+const closeLoginDialog = document.getElementById("closebtn")
 const signupForm = document.getElementById("signup-form");
 const loginButton = document.getElementById("login-form-submit");
 const signupButton = document.getElementById("signup-form-submit");
 const errorMsg = document.getElementById("error-msg");
 const successMsg = document.getElementById("success-msg");
+
+
+closeLoginDialog.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location='/'
+})
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
