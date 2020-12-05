@@ -1,21 +1,15 @@
-const loginNavbtn = document.getElementById("firstlink")
-const closeLoginDialog = document.getElementById("closebtn")
-const loginShowHide = document.getElementById("login-box");
 const loginForm = document.getElementById("login-form");
+const closeLoginDialog = document.getElementById("closebtn")
 const signupForm = document.getElementById("signup-form");
 const loginButton = document.getElementById("login-form-submit");
 const signupButton = document.getElementById("signup-form-submit");
 const errorMsg = document.getElementById("error-msg");
 const successMsg = document.getElementById("success-msg");
 
-loginNavbtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  (loginShowHide.style.display === 'block') ? loginShowHide.style.display = 'none': loginShowHide.style.display = 'block';
-})
 
 closeLoginDialog.addEventListener("click", (e) => {
   e.preventDefault();
-  loginShowHide.style.display = 'none';
+  window.location='/'
 })
 
 loginButton.addEventListener("click", (e) => {
@@ -28,7 +22,7 @@ loginButton.addEventListener("click", (e) => {
       errorMsg.style.display = 'none';
       successMsg.innerText = "Login Successful"
       successMsg.style.display = 'block';
-      setTimeout(() => location.reload(), 2000);
+      setTimeout(() =>  window.location='/', 2000);
       
     } else {
       errorMsg.innerText = "Invalid username or password"
@@ -47,7 +41,7 @@ signupButton.addEventListener("click", (e) => {
     errorMsg.style.display = 'none';
     successMsg.innerText = "Sign Up Successful"
     successMsg.style.display = 'block';
-    setTimeout(() => location.reload(), 2000);
+    setTimeout(() =>  window.location='/', 2000);
   } else {
     errorMsg.innerText = "Invalid username or email or password entered";
     errorMsg.style.display = 'block';
