@@ -9,7 +9,7 @@ const successMsg = document.getElementById("success-msg");
 
 closeLoginDialog.addEventListener("click", (e) => {
   e.preventDefault();
-  window.location='/'
+  window.location='index.html'
 })
 
 loginButton.addEventListener("click", (e) => {
@@ -22,7 +22,7 @@ loginButton.addEventListener("click", (e) => {
       errorMsg.style.display = 'none';
       successMsg.innerText = "Login Successful"
       successMsg.style.display = 'block';
-      setTimeout(() =>  window.location='/', 2000);
+      setTimeout(() =>  window.location='index.html', 2000);
       
     } else {
       errorMsg.innerText = "Invalid username or password"
@@ -41,7 +41,7 @@ signupButton.addEventListener("click", (e) => {
     errorMsg.style.display = 'none';
     successMsg.innerText = "Sign Up Successful"
     successMsg.style.display = 'block';
-    setTimeout(() =>  window.location='/', 2000);
+    setTimeout(() =>  window.location='index.html', 2000);
   } else {
     errorMsg.innerText = "Invalid username or email or password entered";
     errorMsg.style.display = 'block';
